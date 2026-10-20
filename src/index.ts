@@ -9,8 +9,8 @@ client.once(Events.ClientReady, (c) => {
 client.on(Events.InteractionCreate, async (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
-  if (interaction.commandName === "ping") {
-    await interaction.reply("Pong !");
+  if (interaction.commandName === "test"){
+    await interaction.reply("feur");
   }
 });
 
