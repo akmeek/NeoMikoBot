@@ -25,7 +25,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
             await interaction.reply(`Rolling ${faces}...\n${interaction.user.displayName} rolls **${result[0]}** point(s)`);
         }else{
             const tot = result.reduce((acc, courant) => acc + courant, 0);
-            await interaction.reply(`Rolling ${faces} x${nbDes}...\n${interaction.user.displayName} rolls ${result.join(" + ")} = ${tot}`);
+            await interaction.reply(`Rolling ${faces} x${nbDes}...\n${interaction.user.displayName} rolls ${result.join(" + ")} = ${tot} points`);
         }
     }
 });
